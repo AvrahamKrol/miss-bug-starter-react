@@ -6,6 +6,7 @@ export const bugService = {
   getById,
   remove,
   save,
+  getDefaultFilter,
 }
 
 let bugs = [
@@ -76,5 +77,5 @@ function _createBugs() {
 }
 
 function getDefaultFilter() {
-  return { txt: '', minSeverity: 0 }
+  return { title: '', minSeverity: 0 }
 }
